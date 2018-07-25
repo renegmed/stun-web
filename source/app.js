@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import Button from './bootstrap/button';
+import Jumbotron from './bootstrap/jumbotron';
 
 export default class App extends Component {
     render() {
-        return <div className="jumbotron jumbotron-fluid text-center" style={{backgroundImage:'url(img/forest-1198698_960_720.jpg)',color:'white'}}>
+        return <Jumbotron className="-fluid text-center" 
+           style={{backgroundImage:'url(img/forest-1198698_960_720.jpg)',color:'white'}}>
     <div className="container"> 
        <h1>Building React.js User Interfaces</h1>
        <p>with Bootstrap and SaSS.</p>
@@ -11,6 +13,6 @@ export default class App extends Component {
        <p><Button className="-danger-outline -sm"/></p>
        <p><Button className="-primary-outline -lg -block disabled"  /></p>
     </div>
-   </div>
+   </Jumbotron>
     }
 }
