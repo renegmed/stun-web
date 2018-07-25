@@ -7,3 +7,6 @@ $ npm install --save-dev webpack webpack-cli webpack-dev-server
 $ npm install --save-dev babel-loader babel-core babel-preset-es2015 babel-preset-react babel-polyfill
 
 $ npm install react react-dom --save
+
+$ npm install --save-dev css-loader extract-text-webpack-plugin
+
