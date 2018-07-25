@@ -18,7 +18,7 @@ module.exports = {
              exclude:/node_modules/,
              loader:'babel-loader'   
             },
-            {test:/\.css$/,
+            {test:/\.(sa|sc|c)ss$/,
              use: [
                 { 
                  loader:MiniCssExtractPlugin.loader,
@@ -26,7 +26,7 @@ module.exports = {
                      publicPath: '.'
                  }
                 },
-                "css-loader"
+                "css-loader", "sass-loader"
              ]     
             }        
         ]
