@@ -5,8 +5,15 @@ import Jumbotron from './bootstrap/jumbotron';
 export default class App extends Component {
     render() {
         return <Jumbotron className="-fluid text-center" 
-           style={{backgroundImage:'url(img/forest-1198698_960_720.jpg)',color:'white'}}>
-    
+           style={{backgroundImage:'url(img/forest-1198698_960_720.jpg)',color:'white'}} 
+           containerFluid={true}>
+        
+            {/* 
+            if containerFluid == true will result to 
+                <div class="container-fluid" ... 
+            otherwise 
+                <div class="container" ...     */}
+         
        <h1>Building React.js User Interfaces</h1>
        <p>with Bootstrap and SaSS.</p>
        <p><Button className="-primary" href="http://02geek.com/" target="_blank"/></p>
