@@ -4,7 +4,7 @@ module.exports = {
     entry:['babel-polyfill','./source/client.js'],
     output: {
         path: path.resolve(__dirname),
-        filename:'index.js',
+        filename:'index.js',        
     },
     devServer:{
         inline:true,
