@@ -5,20 +5,20 @@ import Container from './container';
 export default class Jumbotron extends Component {   
 
     render() {
-        const props = Object.assign({}, this.props);
-        console.log("------------");
-        console.log(props);
-
+        const CSS_NAME = 'jumbotron';
+        const props = Object.assign({}, this.props); 
+        props.className = classify(CSS_NAME, props.className);
         const containerFluid = props.containerFluid;
-        //delete props.containerFluid;
-        console.log("------------");
-        console.log(containerFluid);
-
-        return <div {...this.props}
-            className={classify('jumbotron',this.props.className)}>
+        delete props.containerFluid;      
+        
+        const body = props.className.includes(CSS_NAME+'-fluid')?(
             <Container fluid={containerFluid}>
             {this.props.children}
             </Container>
+        ):this.props.children;
+
+        return <div {...props} >
+            {body}            
         </div>    
     }
 }

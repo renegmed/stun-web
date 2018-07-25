@@ -4,9 +4,10 @@ import Jumbotron from './bootstrap/jumbotron';
 
 export default class App extends Component {
     render() {
+        const useContainerFluid = true;
         return <Jumbotron className="-fluid text-center" 
            style={{backgroundImage:'url(img/forest-1198698_960_720.jpg)',color:'white'}} 
-           containerFluid={true}>
+           containerFluid={useContainerFluid}>
         
             {/* 
             if containerFluid == true will result to 
