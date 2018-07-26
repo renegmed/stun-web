@@ -19,9 +19,9 @@ export default class App extends Component {
          
        <h1>Building React.js User Interfaces</h1>
        <p>with Bootstrap and SaSS.</p>
-       <p><Button className="-primary" href="http://02geek.com/" target="_blank"/></p>
-       <p><Button className="-danger-outline -sm"/></p>
-       <p><Button className="-primary-outline -lg -block"  /></p>
+       <p><Button className="-primary" href="http://02geek.com/" target="_blank" label="Discover things"/></p>
+       <p><Button className="-danger-outline -sm">These are good stuffs</Button></p>
+       <p><Button className="-primary -lg -block" label="Discover things and stuff"  /></p>
      
    </Jumbotron>
    </ReactCSSTransitionGroup>

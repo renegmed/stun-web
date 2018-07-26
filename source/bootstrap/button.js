@@ -12,7 +12,7 @@ export default class Button extends React.Component {
             (this.props.disabled?' disabled':'');
 
         return (
-            <Tag {...this.props} className={className}>Discover things.</Tag>
+            <Tag {...this.props} className={className}>{this.props.label || this.props.children}</Tag>
         );
     }
 }
