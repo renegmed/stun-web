@@ -13,3 +13,6 @@ $ npm install --save-dev css-loader extract-text-webpack-plugin
 $ npm install --save-dev sass-loader node-sass
 
 $ npm install --save-dev bootstrap@4.0.0-beta.2
+
+$ npm install --save react-addons-css-transition-group
+

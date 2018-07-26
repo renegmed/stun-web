@@ -8,3 +8,12 @@ $text-color: yellow;
 .custom{
     @include background-it($image);
 }
+
+.app-appear {
+    opacity: 0.01;
+}
+
+.app-appear-active {
+    opacity: 1;
+    transition: opacity 1000ms ease-in;
+}
